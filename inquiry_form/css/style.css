@@ -1,0 +1,187 @@
+html {
+    font-size: 62.5%;
+  }
+  body {
+    width: 980px;
+    margin: 0 auto;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .header {
+    background-color: #F5B4B3;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  ul.top_menu {
+    float: right;
+  }
+  .top_menu li {
+    float: left;
+    width: auto;
+  }
+  .top_menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+  }
+  .top_menu li a:hover {
+    text-decoration: underline;
+  }
+  .logo_image {
+    width: 110px;
+    float: left;
+    margin: 0;
+  }
+  .image_area{
+    width: 100%;
+  }
+  .wrapper{
+    margin-top: 10px;
+  }
+  .side_menu{
+    width: 300px;
+    float: left;
+  }
+  .side_menu li{
+    background-color: #F5B4B3;
+    height: 6rem;
+    margin-bottom: 10px;
+  }
+  .side_menu li a{
+    font-size:2rem;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+  }
+ 
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .side_menu li:hover{
+    opacity: 0.6;
+  }
+
+  .contact-form{
+    width: 660px;
+    margin-left:20px;
+    float: left;
+    font-size: 1.5rem;
+  }
+
+  .news{
+    height: 200px;
+    background-color: #FCE8E7;
+    padding: 20px;
+    overflow: scroll;
+    line-height: 2;
+  }
+
+  /* Addendum */
+.footer{
+    background-color: #4D4D4D;
+    height: 100px;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .contact-us{
+      background-color: #FCECEC;
+      color: #4D4D4D;
+  }
+
+  .footer{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    background-color: #4D4D4D;
+    display: table;
+    margin-top: 10px;
+  }
+  .footer p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  td textarea{
+      margin-left: 10px;
+      width: 480px;
+      height: 25px;
+  }
+
+  .message{
+      width: 150px;
+      height: 7rem;
+  }
+  
+  .submit-class{
+    padding: 10px;
+    font-size: 3rem;
+    background-color: #008B8B;
+    color: #fff;
+    border: none;
+  }
+  .submit-class:hover{
+      opacity: 0.6;
+  }
+
+  .td-class{
+      text-align: center;
+  }
+
+  tr{
+      height: 7rem;
+  }
+
+  th{
+      width: 150px;
+  }
+
+  td{
+      width: 480px;
+  }
+
+  .input-class{
+      width: 100%;
+  }
+
+  .table-class{
+      border: 1px solid rgba(228, 221, 221, 0.842);
+      border-collapse: collapse;
+  }
+
+  .table-class tr{
+      height: 45px;
+  }
+
+  .table-class th {
+      border: 1px solid rgba(228, 221, 221, 0.842);
+      background-color: gray;
+      color: #fff;
+  }
+
+  .table-class td {
+    border: 1px solid rgba(228, 221, 221, 0.842);
+    padding-left: 15px;
+}
+
+/*   input{
+      width: 480px;
+      margin-left: 10px;
+  } */
