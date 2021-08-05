@@ -11,7 +11,7 @@
     <h3> Welcome there! <h3>
     <p> D'ont disturb please, we're learning web technologies! </p>
 
-    <% result = connection.exec("select weight, give_for from crops;") %>
+    <% result = connection.exec("select weight, give_for from crops where give_for != '自家消費';") %>
     <% data = [] %>
     <% result.each do |record| %>
       <%  data << "The size of bitter gourd：#{record["weight"]}　Who sold：#{record["give_for"]}" %>
