@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dive into code</title>
+</head>
+<body>
+    <% require 'pg' %>
+    <% connection = PG::connect(dbname: "goya") %>
+    <% connection.internal_encoding = "UTF-8" %>
+    <h3> Welcome there! <h3>
+    <p> D'ont disturb please, we're learning web technologies! </p>
+
+    <% result = connection.exec("select weight, give_for from crops;") %>
+    <% data = [] %>
+    <% result.each do |record| %>
+      <%  data << "The size of bitter gourd：#{record["weight"]}　Who sold：#{record["give_for"]}" %>
+    <% end %>
+
+    <form action="goya.cgi" method="POST">
+    Please click here to display goya information<br>
+        <label >Goya info:</label><br>
+        <input type="text" name="goya" value="<%= data.join(' ') %>"><br>
+        <input type="submit" name="Send" >
+   </form> 
+
+   <% result = connection.exec("select weight, give_for from crops where quality=false;") %>
+    <% data = [] %>
+    <% result.each do |record| %>
+      <%  data << "The size of bitter gourd：#{record["weight"]}　Who sold：#{record["give_for"]}" %>
+    <% end %>
+
+   <form action="goya.cgi" method="POST">
+   <br>Please click here to display goya information of poor quality<br>
+        <label >Goya info of poor quality:</label><br>
+        <input type="text" name="goya" value="<%= data.join(' ') %>"><br>
+        <input type="submit" name="Send" >
+    </form> 
+</body>
+</html>
+
